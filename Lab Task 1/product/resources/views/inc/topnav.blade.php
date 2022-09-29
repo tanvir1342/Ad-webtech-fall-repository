@@ -1,6 +1,6 @@
 <html>
     
-    <a class="" href="">product service</a>
-    <a class="" href="">Team</a>
+    <a class="" href="{{route('product')}}">product service</a>
+    <a class="" href="/team">Team</a>
 
 </html>

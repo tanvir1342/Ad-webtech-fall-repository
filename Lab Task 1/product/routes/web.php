@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\service;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,11 +18,18 @@ Route::get('/', function () {
 });
 
 
-
-Route::get('/product/service', function () {
-    return view('product');
-});
+ 
+Route::get('/product/service',[service::class, 'index'])->name('product');
 
 Route::get('/team', function () {
     return view('teams');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+
+
